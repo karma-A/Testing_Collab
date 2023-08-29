@@ -1,12 +1,18 @@
-
+import {Router, Routes, Route} from 'react-router-dom'
 import './App.css'
+import {Home, PageNotFound} from './components/index'
 
 function App() {
 
 
   return (
     <>
-      <h1>Hello</h1>
+      <Router>
+        <Routes>
+          <Route path="/" component={<Home />}  />
+          <Route path="*" component={<PageNotFound />}  />
+        </Routes>
+      </Router>
     </>
   )
 }
