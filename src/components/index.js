@@ -1,13 +1,7 @@
-import Home from './Home'
-import PageNotFound from './PageNotFound'
-import Navbar from './Navbar'
+export {default as Home} from './Home'
+export {default as Navbar} from './Navbar'
+export {default as PageNotFound} from './PageNotFound'
 
 
 
 
-
-export {
-    Home,
-    PageNotFound,
-    Navbar
-}

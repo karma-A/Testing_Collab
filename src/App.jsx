@@ -1,4 +1,4 @@
-import {Router, Routes, Route} from 'react-router-dom'
+import { BrowserRouter,Routes, Route} from 'react-router-dom'
 import './App.css'
 import {Home, PageNotFound} from './components/index'
 
@@ -7,12 +7,12 @@ function App() {
 
   return (
     <>
-      <Router>
+      <BrowserRouter>
         <Routes>
-          <Route path="/" component={<Home />}  />
-          <Route path="*" component={<PageNotFound />}  />
+          <Route path="/" element={<Home />}  />
+          <Route path="*" element={<PageNotFound />}  />
         </Routes>
-      </Router>
+      </BrowserRouter>
     </>
   )
 }
